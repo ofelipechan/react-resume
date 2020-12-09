@@ -1,35 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import ProfileImg from '../../assets/images/profile.jpg';
 import './styles.scss';
 
-export class Menu extends Component {
-    render() {
-        return (
-            <header>
-                <div className="profile">
-                    <div className="profile-image-container">
-                        <img src={ProfileImg} className="profile-image" alt="Profile" />
-                    </div>
-                    <h3 className="title-name">Felipe S. Chan</h3>
-                    <p className="subtitle">Fullstack developer</p>
+const Menu = ({ menuOpen }: any) => {
+    return (
+        <div className={"navbar " + (menuOpen ? 'open' : '')}>
+            <div className="profile">
+                <div className="profile-image-container">
+                    <img src={ProfileImg} className="profile-image" alt="Profile" />
                 </div>
+                <h3 className="title-name">Felipe Chan</h3>
+                <p className="subtitle">Fullstack developer</p>
+            </div>
 
-                <div className="site-nav">
-                    <ul className="header-main-menu">
-                        <li><a>Home</a></li>
-                        <li><a>About Me</a></li>
-                        <li><a>Resume</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
+            <div className="site-nav">
+                <ul className="header-main-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Portfolio</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
 
-                <div className="copyrights">
-                    <span>© 2020 All rights reserved.</span>
-                </div>
-            </header>
-        )
-    }
+            <div className="copyrights">
+                <span>© 2020 All rights reserved.</span>
+            </div>
+        </div>
+    )
 }
 
-export default Menu
+export default connect((state: any) => ({ menuOpen: state.menu.menuOpen }))(Menu);
+

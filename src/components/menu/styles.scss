@@ -1,11 +1,21 @@
 @import '../../assets/styles/colors.scss';
 
-header {
+.navbar {
     background-color: #242323;
     width: 285px;
     color: white;
     height: 100%;
     position: fixed;
+    z-index: 20;
+    display: none;
+
+    &.open{
+       display: block; 
+    }
+
+    @media (min-width: 990px) {
+        display: block;
+    }
 }
 
 .profile {
