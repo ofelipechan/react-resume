@@ -55,16 +55,22 @@
     list-style: none;
 
     li {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
         padding: 0px 40px;
     }
 
-    li a:hover {
-        background-color: #131313;
+    li a {
         width: 100%;
         padding: 10px 20px;
         display: block;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+    }
+
+    li a:hover, li a.active {
+        background-color: #131313;        
         cursor: pointer;
     }
 }

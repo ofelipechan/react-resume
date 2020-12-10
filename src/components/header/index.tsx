@@ -1,12 +1,17 @@
 import React from 'react'
 import ProfileImg from '../../assets/images/profile.jpg';
 import { Menu } from '@styled-icons/boxicons-regular/Menu';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { useDispatch } from 'react-redux';
 import * as MenuActions from '../../store/actions/menu';
 import './styles.scss';
 
-const Header = ({ menuOpen, toggleMenu }: any) => {
+export default function Header() {
+    const dispatch = useDispatch();
+
+    function toggleMenu() {
+        dispatch(MenuActions.toggleMenu());
+    }
+
     return (
         <header>
             <div className="header-profile-image-container">
@@ -19,7 +24,7 @@ const Header = ({ menuOpen, toggleMenu }: any) => {
     )
 }
 
-const mapSateToProps = (state: any) => ({ menuOpen: state.menu.menuOpen });
-const mapDispatchToProps = (dispatch: any) =>  bindActionCreators(MenuActions, dispatch);
+// const mapSateToProps = (state: any) => ({ menuOpen: state.menu.menuOpen });
+// const mapDispatchToProps = (dispatch: any) =>  bindActionCreators(MenuActions, dispatch);
 
-export default connect(mapSateToProps, mapDispatchToProps)(Header);
+// export default connect(mapSateToProps, mapDispatchToProps)(Header);
