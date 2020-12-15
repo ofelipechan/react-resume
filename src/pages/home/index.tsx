@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
+import { Envelope } from '@styled-icons/boxicons-solid/Envelope';
 import './styles.scss';
+import { useHistory } from 'react-router-dom';
 
 export default class Menu extends Component<any, { text: string }> {
     finalText = `Hello! I'm Felipe Chan`;
@@ -26,11 +29,20 @@ export default class Menu extends Component<any, { text: string }> {
         }
     }
 
+    goToPage() {
+        this.props.history.push('/about');
+
+    }
+
     render() {
         return (
             <div className="background-home">
                 <div className="title">
                     <h1>{this.state.text}</h1>
+                    <div className="home-options">
+                        <button className="btn btn-primary" onClick={() => this.goToPage()}><PersonFill className="icon" size="16"/>Who am I</button>
+                        <button className="btn btn-light-primary"><Envelope className="icon" size="16"/>Contact me</button>
+                    </div>
                 </div>
             </div>
         );

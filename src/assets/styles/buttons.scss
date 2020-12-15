@@ -22,7 +22,7 @@ button {
   font-size: 1rem;
   line-height: 1.5;
   border: 0px;
-  border-radius: 5px;
+  border-radius: 20px;
   border-color: transparent;
   padding: 0px 15px;
   height: 40px;
@@ -135,45 +135,6 @@ button {
   }
 }
 
-.backoffice-content.modal-footer .btn {
-  height: 40px !important;
-}
-
-.backoffice-content.modal-footer .btn-light {
-  color: $color_btn_light !important;
-  border: solid 1px $color_btn_light !important;
-  background-color: white !important;
-
-  &:focus {
-    border: solid 1px $color_btn_success !important;
-  }
-
-  &:hover {
-    color: white !important;
-    border: 0px !important;
-    background-color: darken($color: $color_btn_success, $amount: 5%) !important;
-  }
-
-  &:active {
-    color: white !important;
-    border: 0px !important;
-    background-color: darken($color: $color_btn_success, $amount: 10%) !important;
-  }
-}
-
-.backoffice-content.modal-footer .btn-success {
-  color: white !important;
-  background-color: $color_btn_success !important;
-
-  &:hover {
-    background-color: darken($color: $color_btn_success, $amount: 5%) !important;
-  }
-
-  &:active {
-    background-color: darken($color: $color_btn_success, $amount: 10%) !important;
-  }
-}
-
 .btn-warning {
   color: white;
   background-color: $color_btn_warning;
@@ -197,7 +158,6 @@ button {
 
   &:hover {
     color: white;
-    border: 0px;
     background-color: darken($color: $color_btn_success, $amount: 5%);
   }
 
@@ -205,6 +165,27 @@ button {
     color: white;
     border: 0px;
     background-color: darken($color: $color_btn_success, $amount: 10%);
+  }
+}
+
+.btn-light-primary {
+  color: $color_btn_primary;
+  border: solid 1px $color_btn_primary;
+  background-color: white;
+
+  &:focus {
+    border: solid 1px $color_btn_primary;
+  }
+
+  &:hover {
+    color: white;
+    background-color: darken($color: $color_btn_primary, $amount: 5%);
+  }
+
+  &:active {
+    color: white;
+    border: 0px;
+    background-color: darken($color: $color_btn_primary, $amount: 10%);
   }
 }
 
@@ -219,13 +200,11 @@ button {
 
   &:hover {
     color: white;
-    border: 0px;
     background-color: darken($color: $color_btn_danger, $amount: 5%);
   }
 
   &:active {
     color: white;
-    border: 0px;
     background-color: darken($color: $color_btn_danger, $amount: 10%);
   }
 }

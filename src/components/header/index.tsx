@@ -4,6 +4,7 @@ import { Menu } from '@styled-icons/boxicons-regular/Menu';
 import { useDispatch } from 'react-redux';
 import * as MenuActions from '../../store/actions/menu';
 import './styles.scss';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const dispatch = useDispatch();
@@ -15,7 +16,9 @@ export default function Header() {
     return (
         <header>
             <div className="header-profile-image-container">
-                <img src={ProfileImg} className="header-profile-image" alt="Profile" />
+                <Link to="/">
+                    <img src={ProfileImg} className="header-profile-image" alt="Profile" />
+                </Link>
             </div>
             <button className="icon-menu" onClick={() => toggleMenu()}>
                 <Menu size="40" />
