@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
 import { Envelope } from '@styled-icons/boxicons-solid/Envelope';
 import './styles.scss';
-import { useHistory } from 'react-router-dom';
 
 export default class Menu extends Component<any, { text: string }> {
     finalText = `Hello! I'm Felipe Chan`;
