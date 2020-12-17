@@ -1,7 +1,9 @@
+@import './assets/styles/screen.scss';
+
 .container-page {
     margin: 0;
 
-    @media (min-width: 990px) {
+    @media (min-width: $screen-lg) {
         margin-left: 285px;
     }
 }

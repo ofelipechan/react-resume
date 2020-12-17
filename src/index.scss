@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 @import './assets//styles/buttons.scss';
+@import './assets//styles/forms.scss';
+@import './assets//styles/grid.scss';
+@import './assets//styles/screen.scss';
+@import './assets//styles/text.scss';
+@import './assets//styles/colors.scss';
 
 * {
   margin: 0;
@@ -41,10 +46,6 @@ p {
   background-color: #101010;
 }
 
-.row {
-  display: flex;
-}
-
 .row-desktop {
   @media (min-width: 900px) {
     display: flex;
@@ -67,7 +68,7 @@ p {
     display: inline-block;
     width: 60px;
     height: 15px;
-    border-color: #11d6f0;
+    border-color: $color-info;
     border-style: solid;
     border-width: 5px 5px 0 5px;
     position: absolute;
@@ -80,7 +81,7 @@ p {
   &:after {
     content: '';
     display: block;
-    border-bottom: 5px solid #11d6f0;
+    border-bottom: 5px solid $color-info;
     width: 57px;
     margin-left: auto;
     margin-right: auto;

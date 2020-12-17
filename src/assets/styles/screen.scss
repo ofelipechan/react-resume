@@ -1,0 +1,275 @@
+$screen-sl: 1440px;
+$screen-xl: 1200px;
+$screen-lg: 992px;
+$screen-md: 768px;
+$screen-sm: 576px;
+$screen-xs: 350px;
+
+$container-sl: 1100px;
+$container-xl: 70vw;
+$container-lg: 65vw;
+$container-md: 77vw;
+$container-sm: 85vw;
+$container-xs: 89vw;
+$container-xxs: 90vw;
+
+$container-padding-lg: 0 5vw;
+
+.container {
+  margin: 0 auto;
+  max-width: $container-xxs;
+
+  /* Extra Small */
+  @media (min-width: $screen-xs) and (max-width: $screen-sm - 1) {
+    max-width: $container-xs;
+  }
+
+  /* Small */
+  @media (min-width: $screen-sm) and (max-width: $screen-md - 1) {
+    max-width: $container-sm;
+  }
+
+  /* Medium */
+  @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    max-width: $container-md;
+  }
+
+  /* Large */
+  @media (min-width: $screen-lg) and (max-width: $screen-xl - 1) {
+    max-width: $container-lg;
+  }
+
+  /* Extra Large */
+  @media (min-width: $screen-xl) and (max-width: $screen-sl - 1) {
+    max-width: $container-xl;
+  }
+
+  /* Super Large */
+  @media (min-width: $screen-sl) {
+    max-width: $container-sl;
+  }
+}
+
+.show-screen-sm {
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.show-screen-md {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+
+.show-screen-lg {
+  display: none;
+
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+}
+
+.hide-screen-mobile {
+  @media (max-width: $screen-sm) {
+    display: none !important;
+  }
+}
+
+.hide-screen-sm {
+  @media (min-width: $screen-sm) {
+    display: none !important;
+  }
+}
+
+.hide-screen-md {
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.hide-screen-lg {
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.hide-screen-xl {
+  @media (min-width: $screen-xl) {
+    display: none;
+  }
+}
+
+.order-lg-last {
+  @media (min-width: $screen-lg) {
+    order: 99;
+  }
+}
+
+.order-lg-8 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 9;
+    order: 8;
+  }
+}
+
+.order-lg-7 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 8;
+    order: 7;
+  }
+}
+
+.order-lg-6 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 7;
+    order: 6;
+  }
+}
+
+.order-lg-5 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 6;
+    order: 5;
+  }
+}
+
+.order-lg-4 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 5;
+    order: 4;
+  }
+}
+
+.order-lg-3 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 4;
+    order: 3;
+  }
+}
+
+.order-lg-2 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+  }
+}
+
+.order-lg-1 {
+  @media (min-width: $screen-lg) {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+.order-lg-first {
+  @media (min-width: $screen-lg) {
+    order: 0;
+  }
+}
+
+.order-md-last {
+  @media (min-width: $screen-md) {
+    order: 99;
+  }
+}
+
+.order-md-3 {
+  @media (min-width: $screen-md) {
+    -webkit-box-ordinal-group: 4;
+    order: 3;
+  }
+}
+
+
+.order-md-2 {
+  @media (min-width: $screen-md) {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+  }
+}
+
+.order-md-1 {
+  @media (min-width: $screen-md) {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+.order-md-first {
+  @media (min-width: $screen-md) {
+    order: 0;
+  }
+}
+
+.order-sm-last {
+  @media (min-width: $screen-sm) {
+    order: 99;
+  }
+}
+
+.order-sm-3 {
+  @media (min-width: $screen-sm) {
+    -webkit-box-ordinal-group: 4;
+    order: 3;
+  }
+}
+
+
+.order-sm-2 {
+  @media (min-width: $screen-sm) {
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+  }
+}
+
+.order-sm-1 {
+  @media (min-width: $screen-sm) {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+  }
+}
+
+.order-sm-first {
+  @media (min-width: $screen-sm) {
+    order: 0;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-sm-left {
+  @media (min-width: $screen-sm) and (max-width: $screen-md) {
+    float: left;
+  }
+}
+
+.float-md-left {
+  @media (min-width: $screen-md) {
+    float: left;
+  }
+}
+
+.float-lg-left {
+  @media (min-width: $screen-lg) {
+    float: left;
+  }
+}
+
+
+.float-right {
+  float: right;
+}
+
+.hide-on-ie {
+
+  /* IE10+ CSS styles go here */
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+    display: none;
+  }
+}
