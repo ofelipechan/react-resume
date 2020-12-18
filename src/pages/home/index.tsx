@@ -31,7 +31,6 @@ export default class Menu extends Component<any, { text: string }> {
 
     goToPage() {
         this.props.history.push('/about');
-
     }
 
     render() {

@@ -31,7 +31,7 @@ export default function Menu() {
                 <ul className="header-main-menu">
                     <li><Link onClick={() => closeMenu()} to='/'>Home</Link></li>
                     <li><Link onClick={() => closeMenu()} to="/about">About Me</Link></li>
-                    <li><Link onClick={() => closeMenu()} to="/">Resume</Link></li>
+                    <li><Link onClick={() => closeMenu()} to="/resume">Resume</Link></li>
                     <li><Link onClick={() => closeMenu()} to="/">Portfolio</Link></li>
                     <li><Link onClick={() => closeMenu()} to="/">Contact</Link></li>
                 </ul>
