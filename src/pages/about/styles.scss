@@ -87,6 +87,10 @@
         margin-bottom: 60px;
     }
 
+    .special-title span {
+        border-left: 1px solid rgba(238, 238, 238, 0.3);
+    }
+
     .special-title span,
     .special-title h2 {
         padding: 0 0 0 15px;
@@ -106,7 +110,7 @@
     h2:before {
         content: '';
         width: 1px;
-        height: 35px;
+        height: 25px;
         background: #11d6f0;
         position: absolute;
         left: -1px;

@@ -23,6 +23,7 @@ export default class About extends Component {
                         <div className="about-description">
                             <p>A Software Engineer with more than 4 years of experience developing tech solutions.<br />
                                 I have worked in many digital projects always trying to follow coding best practices to build systems with more integrity, best performance and good maintainability. I try to pay attention to every detail of systems I work to develop it with the best quality and user experience possible.</p>
+                            <p>During my careear, I have built complex solutions for clients from small startups to large companies.</p>
                             <p>Currently I'm working as a Fullstack Software Engineer at a startup in Brazil called Férias & Co., which is a company from the travel industry.</p>
                             <p>My native language is Portuguese, but I'm also an English speaker.</p>
                         </div>
@@ -65,8 +66,8 @@ export default class About extends Component {
 
                 <div className="about-special-block">
                     <div className="special-title">
-                        <span>What Actually I Do</span>
                         <h2>My Services</h2>
+                        <span>What Actually I Do</span>
                     </div>
                     <div className="row">
                         <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">

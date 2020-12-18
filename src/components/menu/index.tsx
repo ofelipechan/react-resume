@@ -21,7 +21,7 @@ export default function Menu() {
         <div className={"navbar " + (menuOpen ? 'open' : '')}>
             <div className="profile">
                 <div className="profile-image-container">
-                    <img src={ProfileImg} className="profile-image" alt="Profile" />
+                    <Link onClick={() => closeMenu()} to='/'><img src={ProfileImg} className="profile-image" alt="Profile" /></Link>
                 </div>
                 <h3 className="title-name">Felipe Chan</h3>
                 <p className="subtitle">Fullstack developer</p>
