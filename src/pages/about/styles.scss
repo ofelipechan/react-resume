@@ -23,12 +23,12 @@
 }
 
 .icon-guy-programming {
-    width: 50%;
     padding: 40px 40px 0;
     margin: auto;
 
     @media (min-width: $screen-lg) {
         padding-top: 0;
+        width: 50%;
     }
 
     img {
@@ -46,6 +46,7 @@
     @media (min-width: 900px) {
         display: flex;
         justify-content: left;
+        margin-bottom: 60px;
     }
 
     .icon {
@@ -80,6 +81,7 @@
     background-color: #191919;
     padding: 50px 15px;
     position: relative;
+    margin-bottom: 60px;
 
     .special-title {
         margin-bottom: 60px;
