@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as MenuAction from '../../store/actions/menu';
 import ProfileImg from '../../assets/images/profile.jpg';
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 import { Link } from 'react-router-dom';
 import './styles.scss';
 
@@ -19,12 +20,16 @@ export default function Menu() {
 
     return (
         <div className={"navbar " + (menuOpen ? 'open' : '')}>
+            <button className="icon-menu text-white hide-screen-lg" onClick={() => closeMenu()}>
+                <CloseOutline size="40" />
+            </button>
+
             <div className="profile">
                 <div className="profile-image-container">
                     <Link onClick={() => closeMenu()} to='/'><img src={ProfileImg} className="profile-image" alt="Profile" /></Link>
                 </div>
                 <h3 className="title-name">Felipe Chan</h3>
-                <p className="subtitle">Fullstack developer</p>
+                <p className="subtitle">Full stack Software Engineer</p>
             </div>
 
             <div className="site-nav">

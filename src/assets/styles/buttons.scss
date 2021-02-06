@@ -184,7 +184,6 @@ button {
 
   &:active {
     color: white;
-    border: 0px;
     background-color: darken($color: $color_btn_primary, $amount: 10%);
   }
 }

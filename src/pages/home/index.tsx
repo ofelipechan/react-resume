@@ -39,7 +39,7 @@ export default class Menu extends Component<any, { text: string }> {
                 <div className="title">
                     <h1>{this.state.text}</h1>
                     <div className="home-options">
-                        <button className="btn btn-primary" onClick={() => this.goToPage()}><PersonFill className="icon" size="16"/>Who I am</button>
+                        <button className="btn btn-primary" onClick={() => this.goToPage()}><PersonFill className="icon" size="16"/>Meet me</button>
                         <button className="btn btn-light-primary"><Envelope className="icon" size="16"/>Contact me</button>
                     </div>
                 </div>

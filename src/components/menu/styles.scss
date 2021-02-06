@@ -9,6 +9,7 @@
     position: fixed;
     z-index: 20;
     display: none;
+    right: 0;
 
     &.open{
        display: block; 
@@ -16,6 +17,8 @@
 
     @media (min-width: $screen-lg) {
         display: block;
+        left: 0;
+        right: auto;
     }
 }
 
