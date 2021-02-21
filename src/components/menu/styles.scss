@@ -13,6 +13,7 @@
 
     &.open{
        display: block; 
+       padding: 5px;
     }
 
     @media (min-width: $screen-lg) {

@@ -1,0 +1,197 @@
+@import '../../assets/styles/screen.scss';
+@import '../../assets/styles/colors.scss';
+
+.section-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h3, h4 {
+        border-left: 1px solid rgba(255, 255, 255, 0.8);
+        position: relative;
+        padding: 0 0 0 15px;
+        line-height: 1.4;
+        border-left: 1px solid #eee;
+        letter-spacing: 2px;
+        font-weight: 600;
+        margin-bottom: 0;
+
+        &:before {
+            content: '';
+            width: 1px;
+            height: 50%;
+            background: #11d6f0;
+            position: absolute;
+            left: -1px;
+            bottom: 0;
+        }
+    }
+
+
+    h3 span, h4 span {
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-download {
+        margin-left: auto;
+
+        .icon {
+            margin-right: 5px;
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: $color-mid-grey;
+        top: 0;
+        bottom: 0;
+        margin-left: -30px;
+        left: 31px;
+        
+        @media (min-width: $screen-lg) {
+            left: 50%;
+            margin-left: -3px;
+        }
+    }
+
+    h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+.timeline .box {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    padding-left: 45px;
+    margin-top: 40px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: $color-dark-grey;
+        border: 4px solid $color-info;
+        top: 45px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+
+    .period {
+        margin-bottom: 10px;
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .content {
+        background-color: #252323;
+        position: relative;
+        border-radius: 6px;
+        padding: 15px 20px;
+    }
+
+    @media (max-width: $screen-lg - 1) {
+        &:after {
+            left: -12px;
+        }
+
+        &:before {
+            left: 35px;
+            border: solid #fff;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #fff transparent transparent;
+        }
+    }
+
+    @media (min-width: $screen-lg) {
+        width: 50%;
+        padding: 0;
+
+        .content {
+            padding: 30px
+        }
+    }
+
+    &.left {
+        left: 0;
+
+        &:before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 50px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: solid $color-mid-grey;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent $color-mid-grey transparent transparent;
+        }
+
+        @media (min-width: $screen-lg) {
+            &:before {
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent $color-mid-grey;
+            }
+            
+            .content {
+                margin-right: 40px;
+            }
+        }
+
+    }
+
+    &.right {
+        &:before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 50px;
+            width: 0;
+            z-index: 1;
+            left: 35px;
+            border: solid $color-mid-grey;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent $color-mid-grey transparent transparent;
+        }
+
+        @media (min-width: $screen-lg) {
+            left: 50%;
+
+            &:after {
+                left: -16px;
+            }
+
+            &:before {
+                left: 30px;
+            }
+
+            .content,
+            .period {
+                margin-left: 40px;
+            }
+        }
+    }
+
+}

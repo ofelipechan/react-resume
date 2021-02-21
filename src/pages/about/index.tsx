@@ -13,8 +13,11 @@ import { useHistory } from 'react-router-dom';
 
 export default function About() {
     const history = useHistory();
-    const navigateToResume = () => history.push('/resume');
-    
+    const navigateToResume = () => {
+        window.scrollTo(0, 0)
+        history.push('/resume');
+    }
+
     return (
         <div className="container background-dark">
             <div className="title-section">
@@ -70,7 +73,7 @@ export default function About() {
 
             </div>
 
-            <div className="about-special-block">
+            <div className="special-block">
                 <div className="special-title">
                     <h2>My Services</h2>
                     <span>What I Actually Do</span>
@@ -101,10 +104,9 @@ export default function About() {
                             sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
                     </div>
                 </div>
-
             </div>
 
-            <button className="btn btn-primary call-to-action-resume" onClick={() => navigateToResume()}><FileEarmarkTextFill size="15" /> Checkout my Resume</button>
+            <button className="btn btn-light btn-lg call-to-action-resume" onClick={() => navigateToResume()}><FileEarmarkTextFill size="15" /> Checkout my Resume</button>
         </div>
     )
 }

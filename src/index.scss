@@ -90,3 +90,73 @@ p {
   }
 
 }
+
+
+.special-block {
+  background-color: #191919;
+  padding: 50px 30px;
+  position: relative;
+  margin-bottom: 60px;
+
+  .special-title {
+      margin-bottom: 60px;
+  }
+
+  .special-title span {
+      border-left: 1px solid rgba(238, 238, 238, 0.3);
+  }
+
+  .special-title span,
+  .special-title h2 {
+      padding: 0 0 0 15px;
+  }
+
+  h2 {
+      position: relative;
+      line-height: 1;
+      border-left: 1px solid #eee;
+      letter-spacing: 2px;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 0;
+      border-left: 1px solid rgba(238, 238, 238, 0.3);
+  }
+
+  h2:before {
+      content: '';
+      width: 1px;
+      height: 25px;
+      background: #11d6f0;
+      position: absolute;
+      left: -1px;
+      bottom: 0;
+  }
+
+  &:before {
+      border-color: #11d6f0 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #11d6f0;
+      left: 0;
+      top: 0;
+  }
+
+  &:after {
+      border-color: rgba(0, 0, 0, 0) #11d6f0 #11d6f0 rgba(0, 0, 0, 0);
+      bottom: 0;
+      right: 0;
+  }
+
+  &:before,
+  &:after {
+      border-style: solid;
+      border-width: 2px;
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      width: 50px;
+  }
+
+  h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+}
