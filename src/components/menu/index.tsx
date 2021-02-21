@@ -29,7 +29,7 @@ export default function Menu() {
                     <Link onClick={() => closeMenu()} to='/'><img src={ProfileImg} className="profile-image" alt="Profile" /></Link>
                 </div>
                 <h3 className="title-name">Felipe Chan</h3>
-                <p className="subtitle">Full stack Software Engineer</p>
+                <p className="subtitle">Full Stack Software Engineer</p>
             </div>
 
             <div className="site-nav">

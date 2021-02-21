@@ -25,12 +25,12 @@ export default function About() {
                     <h2>Felipe S. Chan</h2>
                     <p>Based in: <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6821604,-46.8754836,10z/data=!3m1!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5505199!4d-46.6333094" rel="noreferrer" target="_blank"><Map size="15" />Sao Paulo, Brazil</a></p>
                     <div className="about-description">
-                        <p>I am a Software Engineer with 5 years of experience developing tech solutions.<br />
-                            On my trajetory working with IT I have worked in many digital projects always trying to follow coding best practices to build systems with more integrity, best performance and good maintainability.
+                        <p>I am a Brazillian Full Stack Software Engineer with 5 years of experience developing tech solutions.<br />
+                            On my trajetory, I have worked in many digital projects always trying to follow coding best practices to build systems with more integrity, best performance and good maintainability.
                             During my careear, I have built complex and scalable solutions for clients from small startups to large companies.
                             </p>
                         <p>I try to pay attention to every detail of systems I work to develop it with the best user experience, quality and security possible.</p>
-                        <p>Currently I'm working as a Fullstack Software Engineer at a startup in Brazil called Férias & Co., which is a company from the travel industry.</p>
+                        <p>Currently I'm working as a Full Stack Software Engineer at a startup in Brazil called <a href="http://ferias.co" rel="noreferrer" target="_blank">Férias & Co.</a>, which is a company from the travel industry.</p>
                         <p>My native language is Portuguese, but I'm also an English speaker.</p>
                     </div>
                 </div>
