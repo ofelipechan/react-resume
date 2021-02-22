@@ -2,8 +2,31 @@ import React from 'react';
 import './styles.scss';
 import { InfoCircle } from '@styled-icons/boxicons-solid/InfoCircle';
 import { CloudDownload } from '@styled-icons/boxicons-solid/CloudDownload';
+import ImgFiap from '../../assets/images/fiap.png';
+import ImgImpacta from '../../assets/images/impacta.png';
+import ImgCultura from '../../assets/images/cultura.png';
+import ImgCebrac from '../../assets/images/cebrac.png';
 
 export default function Resume() {
+
+    function renderEducation() {
+        const list = [
+            { title: "Bachelor's degree in Information Systems", subtitle: 'Graduated in 2019', image: ImgFiap, alt: 'FIAP' },
+            { title: 'Microsoft SQL Server 2014 Course', subtitle: 'December, 2015', image: ImgImpacta, alt: 'Impacta Tecnologia' },
+            { title: 'English Course', subtitle: '2011-2014', image: ImgCultura, alt: 'Cultura Inglesa' },
+            { title: 'Maintenance of computers', subtitle: 'December, 2011', image: ImgCebrac, alt: 'Cebrac' },
+        ];
+        return list.map((education) => (
+            <div className="col-12 col-md-6 col-lg-4">
+                <div className="education-box">
+                    <img src={education.image} alt={education.alt} />
+                    <h5 className="title">{education.title}</h5>
+                    <p className="subtitle">{education.subtitle}</p>
+                </div>
+            </div>
+        ));
+    }
+
     return (
         <div className="container background-dark">
             <div className="title-section">
@@ -76,6 +99,9 @@ export default function Resume() {
                     Background History</h3>
             </div>
 
+            <div className="row row-margin education-section">
+                {renderEducation()}
+            </div>
         </div>
     )
 }

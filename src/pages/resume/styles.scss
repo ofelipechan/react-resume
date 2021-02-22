@@ -4,7 +4,7 @@
 .section-head {
     align-items: center;
     margin-bottom: 50px;
-    
+
     @media (min-width: $screen-lg) {
         display: flex;
     }
@@ -17,7 +17,8 @@
         font-size: 20px;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         border-left: 1px solid rgba(255, 255, 255, 0.8);
         position: relative;
         padding: 0 0 0 15px;
@@ -38,16 +39,23 @@
     }
 
 
-    h2 span, h3 span {
+    h2 span,
+    h3 span {
         display: block;
         color: rgba(255, 255, 255, 0.8);
     }
 
     .btn-download {
         margin-left: auto;
+        margin-top: 30px;
+        display: inline-block;
 
         .icon {
             margin-right: 5px;
+        }
+
+        @media (min-width: $screen-lg) {
+            margin-top: 0;
         }
     }
 }
@@ -66,7 +74,7 @@
         bottom: 0;
         margin-left: -30px;
         left: 31px;
-        
+
         @media (min-width: $screen-lg) {
             left: 50%;
             margin-left: -3px;
@@ -107,7 +115,7 @@
     }
 
     .content {
-        background-color: #252323;
+        background-color: $color-mid-grey;
         position: relative;
         border-radius: 6px;
         padding: 15px 20px;
@@ -156,7 +164,7 @@
                 border-width: 10px 0 10px 10px;
                 border-color: transparent transparent transparent $color-mid-grey;
             }
-            
+
             .content {
                 margin-right: 40px;
             }
@@ -196,4 +204,35 @@
         }
     }
 
+}
+
+.education-section {
+    .education-box {
+        background: $color-mid-grey;
+        padding: 15px 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        height: 200px;
+        
+        @media (min-width: $screen-lg) {
+            height: 280px;
+            padding: 30px 30px;
+        }
+    }
+    
+    img {
+        max-width: 100px;
+        padding: 25px 0;
+        text-align: center;
+        
+        @media (min-width: $screen-lg) {
+            max-width: 70%;
+            padding: 30px 0;
+        }
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
