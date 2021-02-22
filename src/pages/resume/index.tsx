@@ -15,7 +15,7 @@ export default function Resume() {
                 </h3>
                 <a className="btn btn-primary btn-download" href="/" rel="noreferrer" target="_blank">
                     <CloudDownload className="icon" size="20" />
-                    Download Resume
+                    Download PDF Resume
                 </a>
             </div>
 

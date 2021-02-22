@@ -11,15 +11,21 @@
     display: none;
     right: 0;
 
-    &.open{
-       display: block; 
-       padding: 5px;
+    &.open {
+        display: block;
+        padding-top: 5px;
+        padding-right: 5px;
+        @media (min-width: $screen-lg) {
+            padding-top: 0px;
+            padding-right: 0px;
+        }
     }
 
     @media (min-width: $screen-lg) {
         display: block;
         left: 0;
         right: auto;
+        padding: 0;
     }
 }
 
@@ -56,27 +62,58 @@
     color: #888;
 }
 
+.menu-icon {
+    background-color: $color-info;
+    border-radius: 25px;
+    padding: 5px;
+}
+
 .header-main-menu {
     list-style: none;
 
     li {
-        margin-bottom: 10px;
         text-align: center;
-        padding: 0px 40px;
+        margin: 0px 15px 10px 0;
+
+
+        @media (min-width: $screen-lg) {
+            margin: 0px 0px 10px 15px;
+        }
     }
 
     li a {
         width: 100%;
-        padding: 10px 20px;
         display: block;
         color: white;
         text-decoration: none;
-        border-radius: 25px;
+        padding: 10px 13px 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: $screen-lg) {
+            padding: 10px 50px 10px 25px;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
     }
 
-    li a:hover, li a.active {
-        background-color: #131313;        
+    li:hover,
+    li.active-page {
+        background-color: $color-dark-grey;
         cursor: pointer;
+        border-radius: 0 25px 25px 0;
+
+        @media (min-width: $screen-lg) {
+            border-radius: 25px 0px 0px 25px;
+        }
+    }
+
+    .menu-icon {
+
+        @media (min-width: $screen-lg) {
+            margin-right: 20px;
+        }
     }
 }
 

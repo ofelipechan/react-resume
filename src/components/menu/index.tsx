@@ -2,13 +2,28 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as MenuAction from '../../store/actions/menu';
 import ProfileImg from '../../assets/images/profile.jpg';
-import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
+import { HouseDoorFill } from '@styled-icons/bootstrap/HouseDoorFill';
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
+import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
+import { File } from '@styled-icons/boxicons-solid/File';
+import { Award } from '@styled-icons/fa-solid/Award';
+import { PaperPlane } from '@styled-icons/boxicons-solid/PaperPlane';
 import './styles.scss';
 
 export default function Menu() {
+    const location = useLocation();
     const menuOpen = useSelector((state: any) => state.menu.menuOpen);
     const dispatch = useDispatch();
+    const pages = [
+        { name: 'Home', path: '/', icon: <HouseDoorFill size="20" /> },
+        { name: 'About', path: '/about', icon: <PersonFill size="20" /> },
+        { name: 'Resume', path: '/resume', icon: <File size="20" /> },
+        { name: 'Portfolio', path: '/portfolio', icon: <Award size="20" /> },
+        { name: 'Contact', path: '/contact', icon: <PaperPlane size="20" /> },
+    ];
 
     function closeMenu() {
         toggleMenu();
@@ -16,6 +31,25 @@ export default function Menu() {
 
     function toggleMenu() {
         return dispatch(MenuAction.toggleMenu());
+    }
+
+    function onPageSelected() {
+        window.scrollTo(0, 0);
+        if (menuOpen) {
+            closeMenu();
+        }
+    }
+
+    function renderPagesList() {
+        const currentPath = location.pathname;
+        return pages.map((page, index) => (
+            <li className={currentPath === page.path ? 'active-page' : ''} key={index}>
+                <Link onClick={() => onPageSelected()} to={page.path}>
+                    {page.name}
+                    <div className="menu-icon">{page.icon}</div>
+                </Link>
+            </li>
+        ));
     }
 
     return (
@@ -34,11 +68,7 @@ export default function Menu() {
 
             <div className="site-nav">
                 <ul className="header-main-menu">
-                    <li><Link onClick={() => closeMenu()} to='/'>Home</Link></li>
-                    <li><Link onClick={() => closeMenu()} to="/about">About Me</Link></li>
-                    <li><Link onClick={() => closeMenu()} to="/resume">Resume</Link></li>
-                    <li><Link onClick={() => closeMenu()} to="/">Portfolio</Link></li>
-                    <li><Link onClick={() => closeMenu()} to="/">Contact</Link></li>
+                    {renderPagesList()}
                 </ul>
             </div>
 
