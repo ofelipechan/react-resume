@@ -16,8 +16,8 @@ export default function Resume() {
             { title: 'English Course', subtitle: '2011-2014', image: ImgCultura, alt: 'Cultura Inglesa' },
             { title: 'Maintenance of computers', subtitle: 'December, 2011', image: ImgCebrac, alt: 'Cebrac' },
         ];
-        return list.map((education) => (
-            <div className="col-12 col-md-6 col-lg-4">
+        return list.map((education, index) => (
+            <div className="col-12 col-md-6 col-lg-4" key={index}>
                 <div className="education-box">
                     <img src={education.image} alt={education.alt} />
                     <h5 className="title">{education.title}</h5>
