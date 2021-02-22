@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+.alert {
+    padding: 10px;
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    &.alert-info {
+        background-color: darken($color: $color-info, $amount: 30%);
+    }
+}
