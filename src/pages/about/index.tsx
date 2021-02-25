@@ -6,7 +6,6 @@ import { Layer } from '@styled-icons/boxicons-regular/Layer';
 import { HappyHeartEyes } from '@styled-icons/boxicons-regular/HappyHeartEyes';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { Layout } from '@styled-icons/boxicons-regular/Layout';
-import { FacebookSquare } from '@styled-icons/boxicons-logos/FacebookSquare';
 import { FileEarmarkTextFill } from '@styled-icons/bootstrap/FileEarmarkTextFill';
 import './styles.scss';
 import { useHistory } from 'react-router-dom';
@@ -78,31 +77,24 @@ export default function About() {
                     <h2>My Services</h2>
                     <span>What I Actually Do</span>
                 </div>
-                <div className="row">
-                    <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div className="row row-margin">
+                    <div className="col-xs-12 col-sm-12 col-md-6">
                         <div className="service-icon">
                             <Layout size="40" />
                         </div>
                         <h4>Front-end development</h4>
-                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa,
-                            sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
+                        <p>Responsible for a website’s user-facing code and the architecture of its immersive user experiences.
+                        Everything that you see when you’re navigating around the Internet, from fonts and colors to dropdown menus and sliders, is part of a Front-end developer's job.
+                        </p>
                     </div>
-                    <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div className="col-xs-12 col-sm-12 col-md-6">
                         <div className="service-icon">
                             <CodeAlt size="40" />
                         </div>
                         <h4>Back-end development</h4>
-                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa,
-                            sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                    </div>
-                    <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div className="service-icon">
-                            <FacebookSquare size="40" />
-                        </div>
-                        <h4>Social Media Marketing</h4>
-                        <p>Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa,
-                            sit amet ultricies ex lectus scelerisque nibh. Ut non sodales odio.</p>
-                    </div>
+                        <p>Handle the ‘behind-the-scenes’ functionality of front-end applications. It connects an interface to a database, manages user 
+                            connections, and powers the web application itself. Back-end development works with the front end to deliver the final product.</p>
+                    </div>                    
                 </div>
             </div>
 

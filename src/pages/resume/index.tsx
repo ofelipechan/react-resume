@@ -2,20 +2,27 @@ import React from 'react';
 import './styles.scss';
 import { InfoCircle } from '@styled-icons/boxicons-solid/InfoCircle';
 import { CloudDownload } from '@styled-icons/boxicons-solid/CloudDownload';
-import ImgFiap from '../../assets/images/fiap.png';
-import ImgImpacta from '../../assets/images/impacta.png';
-import ImgCultura from '../../assets/images/cultura.png';
-import ImgCebrac from '../../assets/images/cebrac.png';
+import { WorkHistoryMock } from './work-history-mock';
+import { EducationMock } from './education-mock';
 
 export default function Resume() {
 
+    function renderTimeline() {
+        const list = WorkHistoryMock;
+        return list.map((work, index) => (
+            <div className={`box ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+                <span className="period">{work.period}</span>
+                <div className="content">
+                    <h5>{work.title} at <a href={work.compannyWebsite} rel="noreferrer" target="_blank">{work.companyName}</a></h5>
+                    {work.description ? <p>{work.description}</p> : null} 
+                    {work.technologies ? <p><b>Technologies I used:</b> {work.technologies}</p> : null}                
+                </div>
+            </div>
+        ));
+    }
+
     function renderEducation() {
-        const list = [
-            { title: "Bachelor's degree in Information Systems", subtitle: 'Graduated in 2019', image: ImgFiap, alt: 'FIAP' },
-            { title: 'Microsoft SQL Server 2014 Course', subtitle: 'December, 2015', image: ImgImpacta, alt: 'Impacta Tecnologia' },
-            { title: 'English Course', subtitle: '2011-2014', image: ImgCultura, alt: 'Cultura Inglesa' },
-            { title: 'Maintenance of computers', subtitle: 'December, 2011', image: ImgCebrac, alt: 'Cebrac' },
-        ];
+        const list = EducationMock;
         return list.map((education, index) => (
             <div className="col-12 col-md-6 col-lg-4" key={index}>
                 <div className="education-box">
@@ -44,35 +51,7 @@ export default function Resume() {
             </div>
 
             <div className="timeline">
-                <div className="box left">
-                    <span className="period">Nov 2014 - Out 2015</span>
-                    <div className="content">
-                        <h5>Designer Gráfico na <a href="http://www.buonny.com.br/institucional.php" rel="noreferrer" target="_blank">Buonny Projetos e Serviços</a>
-                        </h5>
-                        <p>Nessa que é uma das maiores empresas gerenciadora de riscos em transporte de cargas, oficialmente iniciei minha atuação no mercado de trabalho na condição de aprendiz, usando um dos meus pontos fortes, que é a criatividade, exercendo o papel de Designer Gráfico no setor de Marketing da Empresa.</p>
-                    </div>
-                </div>
-                <div className="box right">
-                    <span className="period">Abr 2016 - Jun 2017</span>
-                    <div className="content">
-                        <h5>Estagiário na <a href="http://www.duratex.com.br/" rel="noreferrer" target="_blank">Duratex S.A.</a></h5>
-                        <p>A Duratex, controlada pela Itaúsa e com cerca de 11 mil colaboradores, é a maior produtora de painéis de madeira industrializada, louças e metais sanitários do hemisfério sul, e líder no mercado brasileiro. Após ingressar no curso superior, fiz parte do time de Desenvolvimento e Sustentação de Sistemas da empresa, onde prestávamos suporte, desenvolvimento de novas funcionalidades e manutenção de sistemas extremamente importantes, principalmente para o funcionamento das diversas fábricas Deca, Hydra e Madeira.</p>
-                    </div>
-                </div>
-                <div className="box left">
-                    <span className="period">Jun 2017 – Mai 2019</span>
-                    <div className="content">
-                        <h5>Analista de Sistemas na <a href="http://www.duratex.com.br/" rel="noreferrer" target="_blank">Duratex S.A.</a></h5><p>Após um ano na empresa, fui promovido ao cargo de Analista de Sistema. Deixei o time de sustentação dos sistemas industriais e passei a atuar em novas demandas como desenvolvedor Fullstack. Tive a oportunidade de participar de alguns projetos usando tecnologias como Angular 7, Ionic 4, Web API em C#.NET, NodeJS, infraestutura em Cloud AWS e Serverless Framework. </p>
-                    </div>
-                </div>
-                <div className="box right">
-                    <span className="period">Mai 2019 – Atual</span>
-                    <div className="content">
-                        <h5>Desenvolvedor Fullstack na <a href="http://ferias.co/" rel="noreferrer" target="_blank">Férias &amp; Co.</a></h5>
-                        <p>É uma plataforma que através da união de milhares de hotéis no Brasil e no mundo oferece a possibilidade de empresas incentivarem colaboradores com esse benefício para que com suas famílias viajarem e aproveitarem da melhor forma possível seus dias de descanso e lazer.<br /> Na parte de Front-End estamos responsáveis pela criação e entrega da melhor experiência de três portais necessários para o funcionamento da plataforma Férias &amp; Co. Já no Back-End atuei de forma a conseguir construir sistemas mais íntegros, seguros e de boa manutenibilidade, usando tecnologias como Node e .NET.
-                        </p>
-                    </div>
-                </div>
+                {renderTimeline()}
             </div>
 
 
