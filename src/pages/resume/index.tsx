@@ -64,7 +64,7 @@ export default function Resume() {
                     <h4>Advanced Skills</h4>
                     <p className="margin-bottom-30">HTML, CSS, SCSS, Javascript, Typescript, Angular 8, Node.js, Express.js.</p>
                     <h4>Intermediate Skills</h4>
-                    <p className="margin-bottom-30">GraphQL, React.js, MongoDB, SQL Server, Unit Testing, Mocha.js, Chai.js, AWS Lambda Functions, Serverless Framework, Git Flow.</p>
+                    <p className="margin-bottom-30">GraphQL, React.js, MongoDB, SQL Server, Unit Testing, Mocha.js, Chai.js, AWS, Serverless Framework, Git Flow.</p>
                     <h4>Basic Skills</h4>
                     <p className="margin-bottom-30">Redux, Next.js, Docker, .NET Core,</p>
                 </div>

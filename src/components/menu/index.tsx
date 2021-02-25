@@ -9,8 +9,9 @@ import { HouseDoorFill } from '@styled-icons/bootstrap/HouseDoorFill';
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 import { PersonFill } from '@styled-icons/bootstrap/PersonFill';
 import { File } from '@styled-icons/boxicons-solid/File';
-import { Award } from '@styled-icons/fa-solid/Award';
-import { PaperPlane } from '@styled-icons/boxicons-solid/PaperPlane';
+// import { Award } from '@styled-icons/fa-solid/Award';
+// import { PaperPlane } from '@styled-icons/boxicons-solid/PaperPlane';
+import { MagnifyingGlass } from '@styled-icons/entypo/MagnifyingGlass';
 import './styles.scss';
 
 export default function Menu() {
@@ -21,8 +22,8 @@ export default function Menu() {
         { name: 'Home', path: '/', icon: <HouseDoorFill size="20" /> },
         { name: 'About', path: '/about', icon: <PersonFill size="20" /> },
         { name: 'Resume', path: '/resume', icon: <File size="20" /> },
-        { name: 'Portfolio', path: '/portfolio', icon: <Award size="20" /> },
-        { name: 'Contact', path: '/contact', icon: <PaperPlane size="20" /> },
+        // { name: 'Portfolio', path: '/portfolio', icon: <Award size="20" /> },
+        { name: 'Finde me', path: '/contact', icon: <MagnifyingGlass size="20" /> },
     ];
 
     function closeMenu() {
