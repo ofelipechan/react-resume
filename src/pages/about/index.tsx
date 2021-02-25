@@ -32,7 +32,6 @@ export default function About() {
                             During my careear, I have built complex and scalable solutions for clients from small startups to large companies.
                             </p>
                         <p>I try to pay attention to every detail of systems I work to develop it with the best user experience, quality and security possible.</p>
-                        <p>Currently I'm working as a Full Stack Software Engineer at a startup in Brazil called <a href="http://ferias.co" rel="noreferrer" target="_blank">Férias & Co.</a>, which is a company from the travel industry.</p>
                         <p>My native language is Portuguese, but I'm also an English speaker.</p>
                     </div>
                 </div>

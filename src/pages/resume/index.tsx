@@ -44,7 +44,7 @@ export default function Resume() {
                 <h2><span>My professional</span>
                     Work History
                 </h2>
-                <a className="btn btn-primary btn-download" href="/" rel="noreferrer" target="_blank">
+                <a className="btn btn-primary btn-download" href="/Felipe_Chan_Resume.pdf" rel="noopener noreferrer" target="_blank">
                     <CloudDownload className="icon" size="20" />
                     Download PDF Resume
                 </a>
