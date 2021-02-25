@@ -18,7 +18,7 @@ export default function Contact() {
             <div className="contact-icons">
                 <p><LinkedinWithCircle className="icon" size="40" /><a href="https://www.linkedin.com/in/felipechan/" target="_blank" rel="noreferrer">Linkedin</a></p>
                 <p><Github className="icon" size="40" /><a href="https://github.com/ofelipechan" target="_blank" rel="noreferrer">Github</a></p>
-                <p><MailWithCircle className="icon" size="40" /><a href="mailto:contato.felipechan@gmail.com" target="_blank" rel="noreferrer">E-mail</a></p>
+                <p><MailWithCircle className="icon" size="40" /><a href="mailto:contato.felipechan@gmail.com" target="_blank" rel="noreferrer">E-mail</a> (contato.felipechan@gmail.com)</p>
             </div>
         </div>
     )
