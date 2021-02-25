@@ -20,7 +20,7 @@ export const WorkHistoryMock = [
         title: 'Full Stack Software Engineer',
         companyName: 'Duratex S.A',
         compannyWebsite: 'https://www.duratex.com.br/',
-        description: 'The eighth largest producer of wood panels in the world and the largest in the Southern Hemisphere, Duratex manufactures wood products aimed at the furniture industry and the civil construction sectors',
+        description: 'The eighth largest producer of wood panels in the world and the largest in the Southern Hemisphere, Duratex manufactures products aimed at the furniture industry and the civil construction sectors',
         technologies: 'Angular 4, Ionic 2, Node.js, MongoDB, SQL Server, Serverless Framework, AWS, .NET 4.'
     },
     {
