@@ -23,7 +23,7 @@ export default function Menu() {
         { name: 'About', path: '/about', icon: <PersonFill size="20" /> },
         { name: 'Resume', path: '/resume', icon: <File size="20" /> },
         // { name: 'Portfolio', path: '/portfolio', icon: <Award size="20" /> },
-        { name: 'Finde me', path: '/contact', icon: <MagnifyingGlass size="20" /> },
+        { name: 'Find me', path: '/contact', icon: <MagnifyingGlass size="20" /> },
     ];
 
     function closeMenu() {
