@@ -2,6 +2,8 @@
 
 This is a website resume.
 
+Live preview: www.felipechan.com.br
+
 
 The project was created using "create-react-app".
 
