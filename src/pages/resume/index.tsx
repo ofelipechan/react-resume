@@ -55,16 +55,16 @@ export default function Resume() {
             </div>
 
 
-            <div className="special-block">
+            <div className="special-block" id="professional-skills">
                 <div className="section-head">
                     <h3><span>My professional</span>
                     Work Skills</h3>
                 </div>
                 <div>
                     <h4>Great Skills</h4>
-                    <p className="margin-bottom-30">HTML, CSS, SCSS, Javascript, Typescript, Angular 8, Node.js, Express.js., GraphQL, React.js, MongoDB, SQL Server, AWS, Serverless Framework, Git Flow.</p>
+                    <p className="margin-bottom-30">HTML, CSS, SCSS, Javascript, Typescript, Angular 8, Node.js, Express.js, Mocha.js, Chai.js, GraphQL, React.js, MongoDB, SQL Server, AWS, Serverless Framework, Git Flow.</p>
                     <h4>Basic Skills</h4>
-                    <p className="margin-bottom-30">Redux, Mocha.js, Chai.js, Next.js, Docker, .NET Core,</p>
+                    <p className="margin-bottom-30">Docker, Redux, Next.js, Docker, .NET Core,</p>
                 </div>
                 <div className="alert alert-info">
                     <span><InfoCircle className="icon" size="20" /><b>Fun fact:</b> This website was made by me using React.js.</span>

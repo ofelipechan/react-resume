@@ -13,7 +13,7 @@ export const WorkHistoryMock = [
         companyName: 'Férias & Co.',
         compannyWebsite: 'https://www.ferias.co/',
         description: 'Through the union of thousands of hotels in Brazil and worldwide, Férias & Co. is a startup with a platform that offers the possibility for companies to encourage employees with a corporate benefit where they can enjoy their days of rest and leisure with their families booking flights and nice hotel rooms when they go on vacation.',
-        technologies: 'Angular 8, Node.js, MongoDB, Serverless Framework, AWS, .NET Core.'
+        technologies: 'Angular 8, Node.js, MongoDB, Serverless Framework, AWS, Docker, .NET Core.'
     },
     {
         period: 'June 2017 - May 2019',
@@ -21,7 +21,7 @@ export const WorkHistoryMock = [
         companyName: 'Duratex S.A',
         compannyWebsite: 'https://www.duratex.com.br/',
         description: 'The eighth largest producer of wood panels in the world and the largest in the Southern Hemisphere, Duratex manufactures products aimed at the furniture industry and the civil construction sectors',
-        technologies: 'Angular 4, Ionic 2, Node.js, MongoDB, SQL Server, Serverless Framework, AWS, .NET 4.'
+        technologies: 'Angular 4, Ionic 2, Node.js, MongoDB, SQL Server, Serverless Framework, AWS, Docker, .NET 4'
     },
     {
         period: 'April 2016 - June 2017',
