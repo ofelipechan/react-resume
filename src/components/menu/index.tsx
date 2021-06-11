@@ -23,7 +23,7 @@ export default function Menu() {
         { name: 'About', path: '/about', icon: <PersonFill size="20" /> },
         { name: 'Resume', path: '/resume', icon: <File size="20" /> },
         // { name: 'Portfolio', path: '/portfolio', icon: <Award size="20" /> },
-        { name: 'Find me', path: '/contact', icon: <MagnifyingGlass size="20" /> },
+        { name: 'Contact me', path: '/contact', icon: <MagnifyingGlass size="20" /> },
     ];
 
     function closeMenu() {
@@ -74,7 +74,7 @@ export default function Menu() {
             </div>
 
             <div className="copyrights">
-                <span>© 2020 All rights reserved.</span>
+                <span>© 2021 All rights reserved.</span>
             </div>
         </div>
     )

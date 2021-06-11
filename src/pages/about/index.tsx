@@ -25,7 +25,7 @@ export default function About() {
             <div className="about-description-container row order-lg-1">
                 <div className="about-description-section">
                     <h2>Felipe S. Chan</h2>
-                    <p>Based in: <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6821604,-46.8754836,10z/data=!3m1!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5505199!4d-46.6333094" rel="noreferrer" target="_blank"><Map size="15" />Sao Paulo, Brazil</a> 🇧🇷</p>
+                    <p>Located in: <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.6821604,-46.8754836,10z/data=!3m1!4b1!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5505199!4d-46.6333094" rel="noreferrer" target="_blank"><Map size="15" />Sao Paulo, Brazil</a> 🇧🇷</p>
                     <div className="about-description">
                         <p>I am a Brazillian Full Stack Software Engineer with 5 years of experience developing tech solutions.<br />
                             On my trajetory, I have worked in many digital projects always trying to follow coding best practices to build systems with more integrity, best performance and good maintainability.
@@ -41,7 +41,7 @@ export default function About() {
                             <Suitcase size="20" />
                         </div>
                         <div className="icon-info">
-                            <h6>5 Years Job</h6>
+                            <h6>+5 Years</h6>
                             <p>Experience</p>
                         </div>
                     </div>
